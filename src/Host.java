@@ -143,7 +143,7 @@ public class Host
             pathLength++;
 
             // find the arrow at the latest point
-            String arrow = " "; // TODO #2 - we need to replace this with the value of grid at p.
+            String arrow = grid[p.getRow()][p.getCol()]; // TODO #2 - we need to replace this with the value of grid at p.
 
             // find the KPoint that arrow points to... if it is out of bounds, break.
             KPoint p2 = p; // for now... we should replace this with the KPoint p is pointing to in the "if" statements
