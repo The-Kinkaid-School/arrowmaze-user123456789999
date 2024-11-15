@@ -37,6 +37,13 @@ public class Host
     private void buildGrid()
     {
         // TODO #0 - we need to write this method!
+        grid = new String[GRID_SIZE][GRID_SIZE];
+       for (int row = 0; row<GRID_SIZE; row++){
+           for (int col=0; col<GRID_SIZE; col++){
+               int whichArrow =(int)(4*Math.random());
+               grid[row][col]=DIRECTION_STRINGS[whichArrow];
+           }
+       }
     }
 
     /**
