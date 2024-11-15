@@ -67,6 +67,13 @@ public class Host
 
         // draw the grid. include the row number and a tab at the start of each line.
         // TODO # 1 - we need to write a loop (or two) to do this.
+        for (int row = 0; row<GRID_SIZE; row++){
+            System.out.print((STR."\{row}\t"));
+            for (int col=0; col<GRID_SIZE; col++){
+                System.out.print(STR."\{grid[row][col]} ");
+            }
+            System.out.println();
+        }
     }
 
     /**
