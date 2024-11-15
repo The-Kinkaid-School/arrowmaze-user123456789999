@@ -153,16 +153,27 @@ public class Host
             if (arrow.equals(DIRECTION_STRINGS[0])) // left
             {
                 // TODO #3a - check whether p is on the left edge; break if so.
+                if (p.getCol() == 0){
+                    break;
+                }
                 // TODO #3b - set p2 to be the KPoint to the left of p.
+                p2= new KPoint(p.getRow(), p.getCol()-1);
             }
             else if (arrow.equals(DIRECTION_STRINGS[1])) // up
             {
                 // TODO #4a - check whether p is on the top edge; break if so.
+                if (p.getRow()==0){
+                    break;
+                }
                 // TODO #4b - set p2 to be the KPoint to the north of p.
+                p2= new KPoint(p.getRow()-1, p.getCol());
             }
             else if (arrow.equals(DIRECTION_STRINGS[2])) // right
             {
                 // TODO #5a - check whether p is on the right edge; break if so.
+                if (p.getRow()==GRID_SIZE-1){
+
+                }
                 // TODO #5b - set p2 to be the KPoint to the right of p.
             }
             if (arrow.equals(DIRECTION_STRINGS[3])) // down
