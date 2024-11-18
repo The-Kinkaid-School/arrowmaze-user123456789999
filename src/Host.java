@@ -180,7 +180,11 @@ public class Host
             if (arrow.equals(DIRECTION_STRINGS[3])) // down
             {
                 // TODO #6a - check whether p is on the bottom edge; break if so.
+                if (p.getCol()==GRID_SIZE-1){
+                    break;
+                }
                 // TODO #6b - set p2 to be the KPoint to the south of p.
+                p2 = new KPoint(p.getRow()+1, p.getCol());
             }
 
             boolean foundMatch = false;
