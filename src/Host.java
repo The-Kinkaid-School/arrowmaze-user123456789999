@@ -172,9 +172,10 @@ public class Host
             {
                 // TODO #5a - check whether p is on the right edge; break if so.
                 if (p.getRow()==GRID_SIZE-1){
-
+                    break;
                 }
                 // TODO #5b - set p2 to be the KPoint to the right of p.
+                p2 = new KPoint(p.getRow(), p.getCol()+1);
             }
             if (arrow.equals(DIRECTION_STRINGS[3])) // down
             {
