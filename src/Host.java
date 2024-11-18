@@ -221,7 +221,12 @@ public class Host
         // start with all dots
         String[][] output;
         // TODO #7 - set output to be GRID_SIZE x GRID_SIZE and all "." strings.
-
+        output = new String[GRID_SIZE][GRID_SIZE];
+        for (int row=0; row<GRID_SIZE; row++){
+            for (int col=0; col<GRID_SIZE; col++){
+                output[row][col] = ".";
+            }
+        }
         // replace any points in path with the arrows from grid (and count steps)
         int numSteps = 0;
         for (KPoint p : path)
