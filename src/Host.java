@@ -240,6 +240,25 @@ public class Host
 
         // print out this grid.
         // TODO #9 - print this output grid out.
+        System.out.print(" \t");
+        for (int c=0; c<GRID_SIZE; c++)
+            if (c < 10)
+                System.out.print("  ");
+            else
+                System.out.print(c/10+" ");
+        System.out.println();
+        System.out.print(" \t");
+        for (int c=0; c<GRID_SIZE; c++)
+            System.out.print(c%10+" ");
+        System.out.println("\n");
+        for (int row = 0; row<GRID_SIZE; row++){
+            System.out.print((STR."\{row}\t"));
+            for (int col=0; col<GRID_SIZE; col++){
+                System.out.print(STR."\{output[row][col]} ");
+            }
+            System.out.println();
+        }
+        
 
         System.out.println("Path had "+numSteps+" steps.");
     }
