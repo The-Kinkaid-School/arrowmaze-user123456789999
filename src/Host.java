@@ -234,6 +234,7 @@ public class Host
             if (p == null)
                 break;
             // TODO #8 - replace the "." in output at p with the arrow in grid at that same location.
+            output[p.getRow()][p.getCol()] = grid[p.getRow()][p.getCol()];
             numSteps++;
         }
 
